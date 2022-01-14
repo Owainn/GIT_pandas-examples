@@ -46,3 +46,5 @@ print('\n==================================================================\n')
 # Example 4: show specific columns
 ratings_info = merge_ratings[['user_id', 'title', 'rating']]
 print('Show specific columns: \n%s' % ratings_info[:10])
+
+Luciana
