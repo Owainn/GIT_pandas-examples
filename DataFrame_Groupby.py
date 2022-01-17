@@ -59,8 +59,8 @@ print('\n==================================================================\n')
 
 
 # Sort data ratings by created field (groupby + lambda function + sorted)
-tri_champ_eval = cloneDF(mergeRatings)
-tri_champ_eval = tri_champ_eval.groupby(['movie_id', 'title'])['rating'].agg(
+bla_bla_bla = cloneDF(mergeRatings)
+bla_bla_bla = bla_bla_bla.groupby(['movie_id', 'title'])['rating'].agg(
     {'COUNT': np.size, 'myAVG': lambda x: x.sum() / float(x.count())}).sort_values('COUNT', ascending=False)
 print('My info sorted: \n%s' % tri_champ_eval[:15])
 
