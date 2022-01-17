@@ -56,7 +56,7 @@ myAvg = myAvg.groupby(['movie_id', 'title'])['rating'].agg(
     {'SUM': np.sum, 'COUNT': np.size, 'AVG': np.mean, 'myAVG': lambda x: x.sum() / float(x.count())})
 print('My info ratings: \n%s' % myAvg[:10])
 print('\n==================================================================\n')
-
+print('\n')
 
 # Sort data ratings by created field (groupby + lambda function + sorted)
 hamtaroo = cloneDF(mergeRatings)
