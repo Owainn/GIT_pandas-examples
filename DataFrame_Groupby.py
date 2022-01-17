@@ -59,7 +59,7 @@ print('\n==================================================================\n')
 
 
 # Sort data ratings by created field (groupby + lambda function + sorted)
-Tuto = cloneDF(mergeRatings)
-TrierLesChampsDeEvaluation = TrierLesChampsDeEvaluation.groupby(['movie_id', 'title'])['rating'].agg(
+hamtaro = cloneDF(mergeRatings)
+hamtaro = hamtaro.groupby(['movie_id', 'title'])['rating'].agg(
     {'COUNT': np.size, 'myAVG': lambda x: x.sum() / float(x.count())}).sort_values('COUNT', ascending=False)
-print('My info sorted: \n%s' % TrierLesChampsDeEvaluation[:15])
+print('My info sorted: \n%s' % hamtaro[:15])
