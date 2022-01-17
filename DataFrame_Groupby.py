@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-__author__ = 'Kevin'
+__author__ = "C'est pas Kevin"
 
 import pandas as pd
 import numpy as np
@@ -63,3 +63,4 @@ tri_champ_eval = cloneDF(mergeRatings)
 tri_champ_eval = tri_champ_eval.groupby(['movie_id', 'title'])['rating'].agg(
     {'COUNT': np.size, 'myAVG': lambda x: x.sum() / float(x.count())}).sort_values('COUNT', ascending=False)
 print('My info sorted: \n%s' % tri_champ_eval[:15])
+
